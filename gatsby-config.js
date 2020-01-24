@@ -3,7 +3,7 @@ module.exports = {
     title: `My Blog`,
     position: `Backend Developer`,
     description: `A blog about frontend development and other cool stuff`,
-    author: `@zed`,
+    author: `Hans Olo`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

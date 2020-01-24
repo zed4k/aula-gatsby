@@ -7,31 +7,18 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Profile from '../Profile';
+import Sidebar from '../Sidebar';
 
-import styled from 'styled-components';
 import GlobalStyles from '../../styles/global';
-
-const LayoutWrapper = styled.section`
-  display: flex;
-`;
-
-const LayoutMain = styled.main`
-  background: #16202c;
-  min-height: 100vh;
-  padding: 0 3.75rem 0 20rem;
-  width: 100%;
-`;
+import * as S from './styled';
 
 const Layout = ({ children }) => {
   return (
-    <LayoutWrapper>
+    <S.LayoutWrapper>
       <GlobalStyles />
-      <aside>
-        <Profile></Profile>
-      </aside>
-      <LayoutMain>{children}</LayoutMain>
-    </LayoutWrapper> // fragment
+      <Sidebar></Sidebar>
+      <S.LayoutMain>{children}</S.LayoutMain>
+    </S.LayoutWrapper> // fragment
   );
 };
 
